@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat Ball Wicket Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Bat Ball Stump Game</h1>
+
+        <p id="result">Please Choose
+        </p>
+
+
+        <button onclick="
+            let computer = generateComputerChoice();
+            let resultmsg = getResultMsg('Bat', computer);
+            showResult(computer, resultmsg);
+        ">Bat</button>
+
+
+        <button onclick="
+            computer = generateComputerChoice();
+            resultmsg = getResultMsg('Ball', computer);
+            showResult(computer, resultmsg);
+        ">Ball</button>
+
+
+        <button onclick="
+            computer = generateComputerChoice();
+            resultmsg = getResultMsg('Wicket', computer);
+            showResult(computer, resultmsg);
+        ">Wicket</button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
